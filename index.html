@@ -8,40 +8,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico in the root directory -->
     <link href="https://fonts.googleapis.com/css?family=Overpass:600|Raleway" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="grid.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
     <main class="container-fluid"> 
-            <header class="hero">
-               
-            <div class="hero-split">
-                     <div class="hero-text">
-                        <h1>Fin</h1>
-                    </div> 
-            </div> 
-            </header>
+        <header class="hero">
 
-        <section class="about">
-             <div class="about">
-                
-            </div>
-             <div class="sign-up-split">
-<!--             <h1>Chuck your deets in here</h1>
- -->                
+            <div class="hero-split square-contents">
+               <div class="hero-text">
+                <h1>Fin</h1>
             </div> 
-        </section>
-        <section class="sign-up">
-          
-           
-            <h1>Chuck your deets in here</h1>
-                
-      
-        </section>
-    </main> 
+        </div> 
+    </header>
+
+    <section class="about">
+       <div class="about-image">
+
+       </div>
+       <div class="about-text-container square-contents">
+        <div class="about-text">
+            <h1>Us</h1>
+            <p>Fin is the idea that you should get subsidised sanitary stuff. The idea is the collective purchaseing power of members can be used to get bulk discounts, with a portion of profits going towards efforts to make the need for such products publically subsidised. </p>
+        </div>
+
+    </div> 
+</section>
+<section class="sign-up square-contents">
+
+    <div class="about-text"> 
+        <h1>You</h1>
+        <p>Enter your name and email below to recieve updates on us and what we can do together.</p>       
+   <form action="https://formspree.io/dataylorx@gmail.com"
+      method="POST">
+        <input type="text" name="name" placeholder="Name">
+        <input type="email" name="_replyto" placeholder="Email">
+        <input type="submit" value="send">
+    </form>
+    </div>
+</section>
+</main> 
 <footer>
 
     <p class="copyright">&copy MaD Ltd 2017</p>
 </footer> 
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+        window.sr = ScrollReveal({duration: 2000, delay: 0, scale: 1});
+        sr.reveal('.hero-text');
+        sr.reveal('.about-text');
+    </script>
 </body>
 </html>
